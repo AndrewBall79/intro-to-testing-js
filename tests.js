@@ -92,4 +92,57 @@ describe('isEven', function () {
     });
 });
 
+describe('isVowel', function () {
+    it('should be a defined function', function () {
+        expect(typeof isVowel).toBe('function')
+    });
+    it('should always return "boolean"', function () {
+        expect(isVowel()).toBe("boolean")
+    });
+    it('"a" should return "true"', function () {
+        expect(isVowel("a")).toBe(true)
+    });
+    it('"A" should return "true"', function () {
+        expect(isVowel("A")).toBe(true)
+    });
+    it('"y" should return "false"', function () {
+        expect(isVowel("y")).toBe (false)
+    });
+    it('4 should return "false"', function () {
+        expect(isVowel(4)).toBe (false)
+    });
+    it('"true" should return "false"', function () {
+        expect(isVowel(true)).toBe (false)
+    });
+    it('"false should return "false"', function () {
+        expect(isVowel(false)).toBe (false)
+    });
+    it('"banana" should return "false"', function () {
+        expect(isVowel("banana")).toBe (false)
+    });
+    it('should return "false"', function () {
+        expect(isVowel()).toBe (false)
+    });
+});
 
+
+describe('add', function () {
+    it('should be defined a function', function () {
+        expect(typeof add).toBe("function")
+    });
+    it('should return 5', function () {
+        expect(add(2, 3)).toBe(5)
+    });
+    it('should return -12', function () {
+        expect(add(-3, -9)).toBe(-12)
+    });
+    it('should return 11', function () {
+        expect(add("5", 6)).toBe(11)
+    });
+    it('should return 6', function () {
+        expect(add("-4", "10")).toBe(6)
+    });
+    it('should return NaN', function () {
+        expect(add("banana", "split")).toBe(NaN)
+    });
+});

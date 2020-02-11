@@ -38,3 +38,21 @@ function isFive(input) {
 function isEven(input) {
     return parseFloat(input) % 2 === 0
 }
+
+function isVowel(input) {
+    if (['a', 'e', 'i', 'o', 'u']){
+        return true
+    }
+    if (parseFloat(input.isNaN)){
+        return true
+    }
+}
+
+function add(input1, input2) {
+    var sum = parseFloat(input1) + parseFloat(input2);
+    if (isNaN(sum)) {
+        return NaN
+    }
+    return sum
+}
+
