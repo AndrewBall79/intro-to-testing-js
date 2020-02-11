@@ -23,3 +23,18 @@ function sayHello(input) {
         return "Hello, " + input + "!";
     }
 }
+
+
+function isFive(input) {
+    if (parseFloat(input) === 5) {
+        return true;
+    }
+    else {
+        return input === Number;
+    }
+}
+
+
+function isEven(input) {
+    return parseFloat(input) % 2 === 0
+}
